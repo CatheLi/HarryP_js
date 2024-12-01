@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Condiciones</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="/assets/favicon/Bellota-icon.png">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <h1>Album Harry Potter</h1>
+    </header>
+    <!--FIN Header-->
+    <!--Figure con Imagen borde interactivo-->
+    <figure class="interactive-photo">
+        <h2>Haz click en el Album</h2>
+        <img id="foto" src="assets/imgs/albumPortada.png" alt="Foto Interactiva">
+    </figure>
+    <!--FIN Imagen borde interactivo-->
+    <!--Main con contenido principal-->
+    <main class="sticker-gallery">
+        <h2>Elige la combinación mágica perfecta (máx 10)</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!--Primera Opción-->
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="assets/imgs/cajaEspecial.png" alt="Caja Especial">
+                    <div class="card-body">
+                        <h5 class="card-title">Caja Mágica</h5>
+                        <p class="card-text">¡La experiencia completa para verdaderos fanáticos de Harry Potter! Incluye
+                            un álbum
+                            temático, láminas de stickers exclusivos y tarjetas coleccionables mágicas. ¡No te pierdas
+                            esta edición limitada que te llevará directo a Hogwarts!</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">
+                            <!-- Entrada para seleccionar cantidad -->
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text">Cantidad</span>
+                                <input type="number" class="form-control" id="numero1" placeholder="Ingrese un número"
+                                    min="0">
+                            </div>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <!--Segunda Opción-->
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="assets/imgs/album20sobres.png" alt="Album con Láminas">
+                    <div class="card-body">
+                        <h5 class="card-title">Inicio Mágico</h5>
+                        <p class="card-text">Elige este combo para iniciar tu colección. Incluye un álbum temático y
+                            láminas de stickers para darle vida a tus páginas con magia. ¡Perfecto para quienes quieren
+                            comenzar a explorar el universo de Harry Potter!.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">
+                            <!-- Entrada para seleccionar cantidad -->
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text">Cantidad</span>
+                                <input type="number" class="form-control" id="numero2" placeholder="Ingrese un número"
+                                    min="0">
+                            </div>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <!--Tercera Opción-->
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="assets/imgs/5sobres.png" alt="Láminas">
+                    <div class="card-body">
+                        <h5 class="card-title">Expande tu Magia</h5>
+                        <p class="card-text">¡Amplía tu colección mágica! Este pack incluye láminas de stickers
+                            temáticos para llenar tu álbum o decorar lo que quieras. Perfecto para coleccionistas que ya
+                            tienen el álbum o que quieren compartir la magia con amigos.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">
+                            <!-- Entrada para seleccionar cantidad -->
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" >Cantidad</span>
+                                <input type="number" class="form-control" id="numero3" placeholder="Ingrese un número"
+                                    min="0">
+                            </div>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="verificacion-form">
+            <div class="verificacion-boton">
+                <p id="mensaje">
+                    <span></span>
+                </p>
+                <button onclick="verificar()">Verificar</button>
+            </div>
+        </section>
+    </main>
+    <!--FIN contenido principal-->
+    <!---->
+    <!--section para el código-->
+    <section class="codigo">
+        <div class="card text-center mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ingresar Password</h5>
+                <div class="key">
+                    <select class="form-select" id="dato1" aria-label="Default select example">
+                        <option selected>-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+
+                    </select>
+                    <select class="form-select" id="dato2" aria-label="Default select example">
+                        <option selected>-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select class="form-select" id="dato3" aria-label="Default select example">
+                        <option selected>-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <button onclick="ingresar()">Ingresar</button>
+            </div>
+            <p id="ingresaClave"><span></span></p>
+        </div>
+    </section>
+    <!--FIN para el código-->
+    <!--Footer-->
+    <footer>
+        <p>@Todos los derechos reservados</p>
+    </footer>
+    <!--FIN Footer-->
+    <!--Scripts y estilos-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Biblioteca JS Bootstrap -->
+    <link rel="stylesheet" href="/assets/css/style.css"><!-- link al CSS-->
+    <script src="/assets/js/script.js"></script><!-- Link al JS -->
+    <!--FIN Scripts y estilos-->
+
+
+
+</body>
+
+</html>

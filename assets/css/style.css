@@ -1,0 +1,91 @@
+body{
+    max-width: 100%;
+}
+
+/*header*/
+header{
+    background-color: #890001;
+    text-align: center;
+    color:white;
+    height: 4rem;
+    position: relative;
+    padding-top: 0.5rem;
+}
+
+/*Borde interactivo*/
+.interactive-photo{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 80px;
+}
+/*sección principal*/
+main h2{
+    text-align: center;
+    color: #890001;
+}
+/*clase de la imagen principal*/
+.interactive-photo img{
+    width: 350px;
+    height: 350px;
+    margin:  50px 50px 50px 130px;
+    display: block;
+}
+
+/*link marco al JS*/
+.frame {
+    border: 2px solid red;
+}
+/*Contenido Principal*/
+.sticker-gallery{
+    background-color: #efbc2f;
+    padding: 50px 0;
+}
+/*cards*/
+.card{
+    padding: 5px;
+    margin: 10px;
+}
+/*clase de la imagen de las cards*/
+.card img{
+    width: 350px;
+    height: 350px;
+    padding-left: 20px;
+}
+.card-title{
+    text-align: center;
+}
+/*clase del verificador*/
+.verificacion-form{
+    justify-items: center;
+    margin-top: 50px;
+}
+.verificacion-boton{
+    justify-items: center;
+}
+/*Fin cards*/
+/*código*/
+.codigo {
+    justify-items: center;
+    background-color: #3c4e91;
+    padding: 20px 0;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.key {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+/*Footer*/
+footer {
+    background-color: #366447;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
